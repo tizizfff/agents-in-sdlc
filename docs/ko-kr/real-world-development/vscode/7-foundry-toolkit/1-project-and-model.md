@@ -42,7 +42,7 @@ Tailspin 후원자는 신뢰할 수 있는 추천을 원합니다. 퍼즐 게임
 5. **Agent** 모드로 새 Copilot Chat을 열고 다음과 같이 요청합니다.
 
    ```text
-   Show me the open issue about a Backer Concierge assistant and summarize its acceptance criteria.
+   Backer Concierge 어시스턴트에 관한 열린 이슈를 보여주고 수락 기준을 요약합니다.
    ```
 
 6. Copilot이 **Add a Backer Concierge assistant for catalog questions** 이슈를 표시하는지 확인합니다. 수락 기준은 근거에 기반한 답변, 모금액을 지어내지 않는 동작, 명확히 하기 위한 질문 하나, 엔드투엔드 테스트를 갖춘 접근성 있는 UI를 요구합니다.
@@ -81,13 +81,13 @@ Tailspin 후원자는 신뢰할 수 있는 추천을 원합니다. 퍼즐 게임
 1. Copilot Chat에서 **+**, **GitHub Issues**를 차례로 선택하고 **Add a Backer Concierge assistant for catalog questions**를 첨부합니다. 다음 프롬프트를 보냅니다.
 
    ```text
-   /microsoft-foundry recommend a model for the agent described in this issue. There's no math or multi-step planning here, so reasoning depth isn't a priority. Prioritize speed instead. Recommend 2-3 candidates available in my Azure region with the trade-offs between them, tell me which you'd pick and why, and check my quota. Avoid deprecated & older models according to the model retirement schedule
+   /microsoft-foundry 이 이슈에 설명된 에이전트에 사용할 모델을 추천합니다. 여기에는 수학이나 다단계 계획이 없으므로 추론 깊이는 우선순위가 아닙니다. 대신 속도를 우선합니다. 내 Azure 지역에서 사용 가능한 후보 2~3개와 서로의 장단점을 추천하고, 어떤 모델을 선택할지 이유와 함께 알려주며 할당량을 확인합니다. 모델 은퇴 일정에 따라 사용 중단되거나 오래된 모델은 피합니다.
    ```
 
 2. 추천 내용을 읽고 요구 사항과 사용 가능한 할당량에 가장 적합한 모델을 선택합니다. Copilot에 배포를 요청합니다.
 
    ```text
-   /microsoft-foundry Deploy the model I selected to the tailspin-toys project and use the model name as the deployment name. Confirm the available quota and capacity with me before creating it.
+   /microsoft-foundry 선택한 모델을 tailspin-toys 프로젝트에 배포하고 모델 이름을 배포 이름으로 사용합니다. 만들기 전에 사용 가능한 할당량과 용량을 저와 확인합니다.
    ```
 
 3. 승인하기 전에 프로젝트, 배포, 용량, 비용을 확인합니다. 범위를 검토한 결과 적절하다면 이 세션에 대해 **Allow az …**를 선택하여 반복되는 요청을 줄입니다.
@@ -102,7 +102,7 @@ Model Playground에는 카탈로그 파일이 없습니다. 시스템 프롬프�
 1. **Models**에서 배포한 모델 이름을 선택하여 해당 모델이 미리 지정된 **Model Playground**를 엽니다. 다음 시스템 프롬프트를 붙여 넣습니다.
 
    ```text
-   You're the Backer Concierge for Tailspin Toys. Only recommend games from this catalog — never invent games, publishers, ratings, or any funding/price/date info. If a request is vague, ask one short question first.
+   당신은 Tailspin Toys의 Backer Concierge입니다. 이 카탈로그의 게임만 추천하고 게임, 퍼블리셔, 평점 또는 모금액/가격/날짜 정보를 절대 지어내지 마십시오. 요청이 모호하면 먼저 짧은 질문을 하나 합니다.
 
    CATALOG
 

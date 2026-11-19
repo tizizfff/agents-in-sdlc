@@ -50,7 +50,7 @@ Tailspin Toys에는 데이터베이스를 살펴보는 캔버스가 이미 포�
 5. 필요한 경우 로컬 데이터베이스를 준비하고 기존 캔버스를 변경하지 않은 채 열도록 Copilot에 요청합니다.
 
     ```plaintext
-    Set up the local database if needed, then open the repository's Database Explorer canvas. Do not change any files.
+    필요한 경우 로컬 데이터베이스를 설정한 다음 리포지토리의 Database Explorer 캔버스를 엽니다. 파일을 변경하지 마십시오.
     ```
 
 6. Database Explorer에서 사용 가능한 테이블을 살펴보고 `games`를 선택합니다.
@@ -74,9 +74,9 @@ Tailspin Toys에는 데이터베이스를 살펴보는 캔버스가 이미 포�
 1. 동일한 세션에서 `/create-canvas`를 입력한 다음 만들려는 캔버스를 설명합니다.
 
    ```plaintext
-   Create a Kanban triage canvas for this repo's open issues and save it under .github/extensions/. Highlight the three issues you'd prioritize and explain why, with the rest below. Include summaries and links.
+   이 리포지토리의 열린 이슈에 대한 Kanban 분류 캔버스를 만들고 .github/extensions/ 아래에 저장합니다. 우선순위를 둘 세 이슈를 강조하고 이유를 설명하며 나머지는 아래에 배치합니다. 요약과 링크를 포함합니다.
 
-   Give each card an "Add to current context" action that adds the issue details without starting work or changing the issue. Make it keyboard-accessible and open it so I can try it.
+   각 카드에 작업을 시작하거나 이슈를 변경하지 않고 이슈 세부 정보를 추가하는 "Add to current context" 액션을 제공합니다. 키보드로 접근할 수 있게 하고 제가 시험해 볼 수 있도록 엽니다.
    ```
 
 Copilot은 `.github/extensions` 아래에 캔버스 확장을 만들고 앱의 오른쪽 패널에 공유 화면을 엽니다. 생성된 확장은 단순한 시각적 산출물이 아니라 실행 가능한 리포지토리 콘텐츠이므로 다음으로 파일과 동작을 살펴봅니다.

@@ -20,7 +20,7 @@ lastUpdated: 2026-10-05
 다음 프롬프트를 보냅니다.
 
 ```plaintext
-Review the space quiz and suggest three focused feature ideas that could each be completed in a short session. Create a separate GitHub issue for each idea with a clear title, user-focused description, and acceptance criteria. Do not implement them yet.
+짧은 세션 하나로 완료할 수 있는 집중된 기능 아이디어 세 가지를 제안하도록 space quiz를 검토합니다. 각 아이디어에 대해 명확한 제목, 사용자 중심 설명, 수락 기준을 갖춘 별도의 GitHub 이슈를 만드십시오. 아직 구현하지 마십시오.
 ```
 
 **Issues**를 열고 이슈 3개를 검토한 다음, 가치가 명확하고 범위를 감당할 수 있는 이슈 하나를 선택합니다.
@@ -38,7 +38,7 @@ Review the space quiz and suggest three focused feature ideas that could each be
 5. 다음 프롬프트를 보냅니다.
 
    ```plaintext
-   Implement this issue completely. Keep the single-file, dependency-free design, test the behavior in the integrated browser, and summarize the changes when finished.
+   이 이슈를 완전히 구현합니다. 단일 파일이며 종속성이 없는 디자인을 유지하고 통합 브라우저에서 동작을 테스트한 다음 완료되면 변경 내용을 요약합니다.
    ```
 
 새 워크트리는 검토하고 병합할 준비가 될 때까지 이 기능을 기본 브랜치와 격리합니다.

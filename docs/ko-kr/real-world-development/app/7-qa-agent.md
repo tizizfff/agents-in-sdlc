@@ -32,9 +32,9 @@ Tailspin Toys는 끌어오기 요청(PR)을 열기 전에 요구 사항, 코드 
 2. 다음 프롬프트를 Copilot에 보내 새 사용자 지정 에이전트를 만듭니다.
 
     ```plaintext
-    Create a custom agent named QA in .github/agents/qa.agent.md. It should check features against their issues and agreed requirements, follow the repository instructions, run the quality-checks skill, use Playwright MCP to verify behavior, and add tests when coverage is missing.
+    .github/agents/qa.agent.md에 QA라는 이름의 커스텀 에이전트를 만듭니다. 이슈와 합의된 요구 사항을 기준으로 기능을 확인하고, 리포지토리 지침을 따르며, quality-checks 스킬을 실행하고, Playwright MCP로 동작을 검증하고, 테스트 범위가 부족하면 테스트를 추가해야 합니다.
 
-    Have it report each requirement as pass, fail, or blocked with supporting evidence. It must ask before changing implementation code, and it must not commit changes or open pull requests. Use the current model and available tools. Just create the profile for now so I can review it.
+    각 요구 사항을 지원 증거와 함께 pass, fail 또는 blocked로 보고하게 합니다. 구현 코드를 변경하기 전에 확인을 요청해야 하며, 변경 사항을 커밋하거나 끌어오기 요청을 열어서는 안 됩니다. 현재 모델과 사용 가능한 도구를 사용합니다. 지금은 검토할 수 있도록 프로필만 만듭니다.
     ```
 
 ## 프로필 검토
@@ -54,7 +54,7 @@ Tailspin Toys는 끌어오기 요청(PR)을 열기 전에 요구 사항, 코드 
 3. 다음 프롬프트로 QA에 기능 검토를 요청합니다.
 
     ```plaintext
-    Review the filtering feature against the issue and the decisions in our plan. Is it ready for a PR?
+    이슈와 계획에서 합의한 결정 사항을 기준으로 필터링 기능을 검토합니다. 끌어오기 요청을 만들 준비가 되었습니까?
     ```
 
 4. QA가 올바른 이슈와 계획 결정을 사용하는지 확인합니다. 요청하면 이슈 URL이나 누락된 컨텍스트를 제공합니다.
